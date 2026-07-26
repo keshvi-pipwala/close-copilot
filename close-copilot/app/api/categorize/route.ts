@@ -3,18 +3,24 @@ import { CHART_OF_ACCOUNTS, classify } from "@/lib/engine.mjs";
 
 export const runtime = "nodejs";
 
-interface In { transactions: { date: string; description: string; amount: number }[] }
+interface In {
+  transactions: { date: string; description: string; amount: number }[];
+  apiKey?: string; // optional "bring your own key" from the client
+}
 
 /**
  * Optional Claude-backed categorization.
- * If ANTHROPIC_API_KEY is not set, we return { fallback: true } and the client
- * runs the on-device agent — so the app never hard-depends on a key.
- * Claude is asked for a strict JSON array; we ALWAYS keep the on-device result
- * as a safety net if parsing fails, so a bad model response can't break close.
+ * Key resolution: a per-request key sent by the visitor ("bring your own key")
+ * takes priority; otherwise the server's ANTHROPIC_API_KEY is used if present.
+ * If neither exists we return { fallback: true } and the client runs the
+ * on-device agent — so the app never hard-depends on a key.
+ * A visitor-supplied key is used only for that single request and never stored.
+ * We ALWAYS keep the on-device result as a safety net if parsing fails, so a
+ * bad model response can't break close.
  */
 export async function POST(req: Request) {
-  const { transactions }: In = await req.json();
-  const key = process.env.ANTHROPIC_API_KEY;
+  const { transactions, apiKey }: In = await req.json();
+  const key = (apiKey && apiKey.trim()) || process.env.ANTHROPIC_API_KEY;
 
   // On-device baseline (also the fallback).
   const baseline = transactions.map((t) => classify(t.description));
