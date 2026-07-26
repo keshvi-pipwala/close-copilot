@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-07-26T05:19:23.263Z",
+  "testSetSize": 104,
+  "autoApproveThreshold": 0.85,
+  "overallTop1Accuracy": 96.2,
+  "autoApprovedShare": 82.7,
+  "autoApprovedPrecision": 100,
+  "routedToReviewShare": 17.3,
+  "reviewPrecision": 44.4,
+  "misroutedAutoPosts": {}
+}

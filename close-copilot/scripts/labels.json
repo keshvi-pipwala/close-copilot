@@ -1,0 +1,418 @@
+[
+{
+"description": "OFFICE RENT april",
+"true": "Rent & Facilities"
+},
+{
+"description": "SMITH ATTORNEY at law",
+"true": "Professional Services"
+},
+{
+"description": "SALES TAX remittance",
+"true": "Taxes"
+},
+{
+"description": "MAILCHIMP monthly",
+"true": "Marketing & Advertising"
+},
+{
+"description": "SQ *UNLISTED VENDOR",
+"true": "Uncategorized"
+},
+{
+"description": "DATADOG monitoring",
+"true": "Software & SaaS"
+},
+{
+"description": "NY DEPT OF REVENUE",
+"true": "Taxes"
+},
+{
+"description": "VERCEL INC hosting",
+"true": "Software & SaaS"
+},
+{
+"description": "ANTHROPIC api credits",
+"true": "Software & SaaS"
+},
+{
+"description": "GITHUB.COM subscription",
+"true": "Software & SaaS"
+},
+{
+"description": "SLACK T012345",
+"true": "Software & SaaS"
+},
+{
+"description": "MARRIOTT hotels NYC",
+"true": "Travel"
+},
+{
+"description": "WEWORK membership",
+"true": "Rent & Facilities"
+},
+{
+"description": "GOOGLE ADS campaign",
+"true": "Marketing & Advertising"
+},
+{
+"description": "DOORDASH * order",
+"true": "Meals & Entertainment"
+},
+{
+"description": "JETBLUE airways",
+"true": "Travel"
+},
+{
+"description": "GUSTO pay run",
+"true": "Payroll"
+},
+{
+"description": "CHECK #1043",
+"true": "Uncategorized"
+},
+{
+"description": "UNITED AIRLINES ticket",
+"true": "Travel"
+},
+{
+"description": "INTERNET service",
+"true": "Utilities"
+},
+{
+"description": "AIRBNB * HMXYZ",
+"true": "Travel"
+},
+{
+"description": "OFFICE DEPOT #12",
+"true": "Office Supplies"
+},
+{
+"description": "LYFT ride",
+"true": "Travel"
+},
+{
+"description": "AMZN MKTP US*2K4",
+"true": "Office Supplies"
+},
+{
+"description": "AWS EMEA cloud services",
+"true": "Software & SaaS"
+},
+{
+"description": "RIPPLING payroll",
+"true": "Payroll"
+},
+{
+"description": "SPECTRUM business",
+"true": "Utilities"
+},
+{
+"description": "FIGMA monthly",
+"true": "Software & SaaS"
+},
+{
+"description": "POS DEBIT 8841",
+"true": "Uncategorized"
+},
+{
+"description": "STAPLES 00489",
+"true": "Office Supplies"
+},
+{
+"description": "MONTHLY SERVICE CHARGE",
+"true": "Bank & Card Fees"
+},
+{
+"description": "SQ *THE CORNER CAFE",
+"true": "Meals & Entertainment"
+},
+{
+"description": "BEST BUY business",
+"true": "Office Supplies"
+},
+{
+"description": "WORKERS COMP policy",
+"true": "Insurance"
+},
+{
+"description": "THE HARTFORD premium payment",
+"true": "Insurance"
+},
+{
+"description": "ESTIMATED TAX q2",
+"true": "Taxes"
+},
+{
+"description": "SEMRUSH seo",
+"true": "Marketing & Advertising"
+},
+{
+"description": "SWEETGREEN nomad",
+"true": "Meals & Entertainment"
+},
+{
+"description": "VENMO * J DOE",
+"true": "Uncategorized"
+},
+{
+"description": "COMCAST xfinity internet",
+"true": "Utilities"
+},
+{
+"description": "TIKTOK ADS",
+"true": "Marketing & Advertising"
+},
+{
+"description": "HISCOX insurance",
+"true": "Insurance"
+},
+{
+"description": "OPENAI API usage",
+"true": "Software & SaaS"
+},
+{
+"description": "APPLE STORE r123",
+"true": "Office Supplies"
+},
+{
+"description": "TST* BISTRO 44",
+"true": "Meals & Entertainment"
+},
+{
+"description": "AT&T business",
+"true": "Utilities"
+},
+{
+"description": "HERTZ rent a car",
+"true": "Travel"
+},
+{
+"description": "REGUS office",
+"true": "Rent & Facilities"
+},
+{
+"description": "LINKEDIN ADS",
+"true": "Marketing & Advertising"
+},
+{
+"description": "AWS EMEA cloud services",
+"true": "Software & SaaS"
+},
+{
+"description": "GEICO commercial",
+"true": "Insurance"
+},
+{
+"description": "DEEL contractor pay",
+"true": "Payroll"
+},
+{
+"description": "DELOITTE advisory",
+"true": "Professional Services"
+},
+{
+"description": "MONGODB ATLAS",
+"true": "Software & SaaS"
+},
+{
+"description": "NORDSTROM #55",
+"true": "Office Supplies"
+},
+{
+"description": "SNOWFLAKE computing",
+"true": "Software & SaaS"
+},
+{
+"description": "DHL express",
+"true": "Shipping & Postage"
+},
+{
+"description": "ACME BOOKKEEPING svc",
+"true": "Professional Services"
+},
+{
+"description": "ATLASSIAN jira cloud",
+"true": "Software & SaaS"
+},
+{
+"description": "DELTA AIR LINES 0062",
+"true": "Travel"
+},
+{
+"description": "ZOOM.US video",
+"true": "Software & SaaS"
+},
+{
+"description": "EXPEDIA travel",
+"true": "Travel"
+},
+{
+"description": "WIRE FEE outgoing",
+"true": "Bank & Card Fees"
+},
+{
+"description": "STRIPE FEE payout",
+"true": "Bank & Card Fees"
+},
+{
+"description": "KPMG audit",
+"true": "Professional Services"
+},
+{
+"description": "CON EDISON electric",
+"true": "Utilities"
+},
+{
+"description": "USPS po box",
+"true": "Shipping & Postage"
+},
+{
+"description": "HELVETICA STUDIO LLC",
+"true": "Professional Services"
+},
+{
+"description": "PWC consulting",
+"true": "Professional Services"
+},
+{
+"description": "ADP payroll fees",
+"true": "Payroll"
+},
+{
+"description": "FRANCHISE TAX board",
+"true": "Taxes"
+},
+{
+"description": "STARBUCKS store 118",
+"true": "Meals & Entertainment"
+},
+{
+"description": "WEWORK membership",
+"true": "Rent & Facilities"
+},
+{
+"description": "ATM FEE withdrawal",
+"true": "Bank & Card Fees"
+},
+{
+"description": "BLUE BOTTLE 44",
+"true": "Meals & Entertainment"
+},
+{
+"description": "CHIPOTLE 2201",
+"true": "Meals & Entertainment"
+},
+{
+"description": "GRUBHUB catering",
+"true": "Meals & Entertainment"
+},
+{
+"description": "FACEBOOK ADS meta",
+"true": "Marketing & Advertising"
+},
+{
+"description": "UBER EATS delivery",
+"true": "Meals & Entertainment"
+},
+{
+"description": "STARBUCKS store 118",
+"true": "Meals & Entertainment"
+},
+{
+"description": "FEDEX 8829",
+"true": "Shipping & Postage"
+},
+{
+"description": "PARKING garage 5th ave",
+"true": "Travel"
+},
+{
+"description": "SHIPSTATION label",
+"true": "Shipping & Postage"
+},
+{
+"description": "INDUSTRIOUS office",
+"true": "Rent & Facilities"
+},
+{
+"description": "FOREIGN TRANSACTION FEE",
+"true": "Bank & Card Fees"
+},
+{
+"description": "AWS EMEA cloud services",
+"true": "Software & SaaS"
+},
+{
+"description": "PACKAGING inventory",
+"true": "Cost of Goods Sold"
+},
+{
+"description": "DUNKIN #33",
+"true": "Meals & Entertainment"
+},
+{
+"description": "NATIONAL GRID gas bill",
+"true": "Utilities"
+},
+{
+"description": "AMTRAK northeast",
+"true": "Travel"
+},
+{
+"description": "SLACK T012345",
+"true": "Software & SaaS"
+},
+{
+"description": "ALIBABA wholesale order",
+"true": "Cost of Goods Sold"
+},
+{
+"description": "ULINE shipping supplies",
+"true": "Office Supplies"
+},
+{
+"description": "MARKETING sponsorship",
+"true": "Marketing & Advertising"
+},
+{
+"description": "ADOBE creative cloud",
+"true": "Software & SaaS"
+},
+{
+"description": "PITNEY BOWES postage",
+"true": "Shipping & Postage"
+},
+{
+"description": "JUSTWORKS peo",
+"true": "Payroll"
+},
+{
+"description": "RAW MATERIALS supplier",
+"true": "Cost of Goods Sold"
+},
+{
+"description": "ZELLE payment",
+"true": "Uncategorized"
+},
+{
+"description": "NOTION LABS annual plan",
+"true": "Software & SaaS"
+},
+{
+"description": "IRS USATAXPYMT",
+"true": "Taxes"
+},
+{
+"description": "LEGAL retainer",
+"true": "Professional Services"
+},
+{
+"description": "HILTON garden inn",
+"true": "Travel"
+},
+{
+"description": "VERIZON wireless",
+"true": "Utilities"
+}
+]

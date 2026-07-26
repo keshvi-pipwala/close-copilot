@@ -1,0 +1,28 @@
+{
+  "name": "close-copilot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An AI agent that categorizes transactions, scores its own confidence, and routes low-confidence rows to a human review queue.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "gen:data": "python3 scripts/gen_data.py",
+    "eval": "node scripts/eval.mjs"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.10",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.19",
+    "postcss": "8.4.39",
+    "tailwindcss": "3.4.6",
+    "typescript": "5.5.3"
+  }
+}
