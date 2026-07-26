@@ -17,6 +17,7 @@ export default function Page() {
   const [threshold, setThreshold] = useState(AUTO_APPROVE_THRESHOLD);
   const [loading, setLoading] = useState(false);
   const [useLLM, setUseLLM] = useState(false);
+  const [apiKey, setApiKey] = useState("");
   const [note, setNote] = useState<string>("");
   const [tab, setTab] = useState<"all" | "review" | "anomalies">("review");
 
@@ -31,11 +32,11 @@ export default function Page() {
         const res = await fetch("/api/categorize", {
           method: "POST",
           headers: { "content-type": "application/json" },
-          body: JSON.stringify({ transactions: raw }),
+          body: JSON.stringify({ transactions: raw, apiKey: apiKey.trim() || undefined }),
         });
         const data = await res.json();
         if (data.fallback || !res.ok) {
-          setNote("No ANTHROPIC_API_KEY set — ran the on-device agent instead.");
+          setNote("No Claude key in play — ran the free on-device agent instead. It still categorizes everything and routes the uncertain rows to review.");
           classified = gate(classifyBatch(raw));
         } else {
           classified = gate(
@@ -133,6 +134,15 @@ export default function Page() {
             <input type="checkbox" checked={useLLM} onChange={(e) => setUseLLM(e.target.checked)} />
             Use Claude (optional)
           </label>
+          {useLLM && (
+            <input
+              type="password"
+              value={apiKey}
+              onChange={(e) => setApiKey(e.target.value)}
+              placeholder="Your Anthropic API key (sk-ant-…)"
+              className="w-56 rounded-lg border border-white/15 bg-panel px-3 py-2 text-xs text-slate-200 placeholder:text-slate-500"
+            />
+          )}
           <div className="ml-auto flex items-center gap-3 text-sm">
             <span className="text-slate-400">Auto-approve confidence ≥</span>
             <input type="range" min={0.5} max={0.99} step={0.01} value={threshold}
@@ -140,7 +150,12 @@ export default function Page() {
             <span className="w-12 font-mono text-indigo-300">{threshold.toFixed(2)}</span>
           </div>
         </div>
-        {note && <p className="mt-3 text-xs text-amber-300/90">{note}</p>}
+        {useLLM && (
+          <p className="mt-3 text-xs text-slate-400">
+            Bring your own Anthropic key to run categorization through Claude — it&apos;s used only for your request and never stored. Leave it blank and the free on-device agent handles it (great for clean data; Claude helps on messier descriptions).
+          </p>
+        )}
+        {note && <p className="mt-2 text-xs text-amber-300/90">{note}</p>}
       </section>
 
       {/* Summary cards */}
